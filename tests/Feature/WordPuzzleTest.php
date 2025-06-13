@@ -1,5 +1,5 @@
 <?php
-namespace Tests\Unit;
+namespace Tests\Feature;
 
 use App\Models\Puzzle;
 use App\Models\Submission;
