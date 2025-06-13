@@ -12,6 +12,7 @@ Route::get('/user', [AuthController::class, 'user'])->middleware('auth:sanctum')
 Route::middleware('auth:sanctum')->group(function () {
     // Puzzle endpoints
     Route::get('/puzzle/{length?}', [PuzzleController::class, 'generate']);
+    Route::post('/puzzle/{puzzle}', [PuzzleController::class, 'puzzle']);
     
     // Submission endpoints
     Route::post('/puzzle/{puzzle}/submit', [SubmissionController::class, 'submit']);
