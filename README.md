@@ -42,6 +42,7 @@ php artisan db:seed
 /api/leaderboard/{puzzle} - GET
 
 # Unit Test cases added
+php artisan test 
 
 ✓ puzzle generation
 ✓ invalid word submission
